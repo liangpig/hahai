@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/confim"
+        android:layout_width="124dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="display"
+        android:text="修改"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Name"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="254dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="184dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="名字输入栏"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txv"
+        android:layout_width="157dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="168dp"
+        android:text="哈嗨，来啦"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="123dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="180dp"
+        android:onClick="bigger"
+        android:text="放大"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confim" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
